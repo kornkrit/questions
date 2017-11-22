@@ -82,7 +82,7 @@ class Recursive {
             int count = 0;
             for(int i = 0; i < b.length(); i++) {
                if(a.charAt(0) == b.charAt(i)){
-                   return checkContain(a.substring(1,a.length()), b.substring(i+1,b.length()));
+                   return checkContain(mySubString(a,1,a.length()), mySubString(b,i+1,b.length()));
                }else{
                    count ++;
                }
@@ -102,8 +102,16 @@ class Recursive {
                 return false;
             }
         }else{
-            return  checkContain(a.substring(1,a.length()), b.substring(1,b.length()));
+            return  checkContain(mySubString(a,1,a.length()), mySubString(b,1,b.length()));
         }
+    }
+
+    public String mySubString(String a, int start, int end){
+        String tmp = "";
+        for(int i = start; i < end; i++){
+            tmp += a.charAt(i);
+        }
+        return tmp;
     }
 
 //        public double GSD(double a, double b){

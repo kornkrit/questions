@@ -10,7 +10,7 @@ public class Main {
 //       System.out.println("Power : " + recursive.power(2,-3));
 //       System.out.println("String : " + recursive.reverse("Hello"));
 //       System.out.println("String : " + recursive.reverseWord("My name is Kornkrit"));
-       System.out.println("String : " + recursive.contains("name", "My name is kornkrit"));
+       System.out.println("String : " + recursive.contains("gear", "My name is kornkrit"));
     }
 
 
