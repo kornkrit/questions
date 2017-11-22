@@ -1,11 +1,13 @@
 public class Main {
     public static void main(String[] args){
-        //Fabonacci
-        //Fabonacci fibonacci = new Fabonacci();
-        //System.out.println("Fibonacci : " + fibonacci.calculate(12));
 
-       Factorial factorial = new Factorial();
-       System.out.println(factorial.calculate(0));
+
+       Recursive recursive = new Recursive();
+//       System.out.println("Factorial : " + recursive.factorial(5));
+//       System.out.println("Fibonacci : " + recursive.fibonacci(6));
+//       System.out.println("Sum natural : " + recursive.sumNutural(5));
+//       System.out.println("Multiply : " + recursive.multiply(2,3));
+       System.out.println("Power : " + recursive.power(2,-3));
     }
 
 
